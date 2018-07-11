@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
 
-export default class KennelLocation extends Component {
+
+export default class OwnersList extends Component {
         render() {
             return (
                 <React.Fragment>
                 {
-                    this.props.locations.map(location =>
+                    this.props.owners.map(owner =>
                         <div>
-                            {location.name}
+                            {owner.id}
+                            {owner.name}
                         </div>
                     )
                 }

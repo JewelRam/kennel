@@ -1,17 +1,18 @@
 import React, { Component } from 'react'
+import OwnerList from "./owners"
 
-export default class KennelLocation extends Component {
+export default class AnimalList extends Component {
         render() {
             return (
                 <React.Fragment>
                 {
-                    this.props.locations.map(location =>
+                    this.props.animals.map(animal =>
                         <div>
-                            {location.name}
+                            {animal.name}
                         </div>
                     )
                 }
                 </React.Fragment>
-            )
+            )     
         }
     }

@@ -4,10 +4,10 @@ import Location from "./location"
 export default class LocationList extends Component {
     state = {
         locations: [
-            {id: 1, name: "Nashville North" },
-            {id: 2, name: "Nashville South" },
-            {id: 3, name: "Nashville East"},
-            {id: 4, name: "Nashville West"} 
+            {id: 1, name: "Nashville North", adress: "110 Something Dr." },
+            {id: 2, name: "Nashville South", adress: "230 Park Dr." },
+            {id: 3, name: "Nashville East", adress: "4002 Road Rd."},
+            {id: 4, name: "Nashville West", adress: "235 Court Ct."} 
         ]
     }
 

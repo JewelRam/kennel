@@ -21,25 +21,10 @@ export default class Kennel extends Component {
             {id: 4, name: "Nashville West"}
         ],
         animals: [
-            {id: 1, name: "Scorpion"},
-            {id: 2, name: "Spider"},
-            {id: 3, name: "Puppy"},
-            {id: 4, name: "Kitten"},
-            {id: 5, name: "Unicorn"},
-            {id: 6, name: "Bear"}
+            
         ],
         owners: [
-            { id: 1, name: "Ryan Tanay" },
-            { id: 2, name: "Emma Beaton" },
-            { id: 3, name: "Dani Adkins" },
-            { id: 4, name: "Adam Oswalt" },
-            { id: 5, name: "Fletcher Bangs" },
-            { id: 6, name: "Angela Lee" }
-        ],
-        relationships: [
-            {id: 1, animalId: 5, personId: 3},
-            {id: 2, animalId: 1, personId: 1},
-            {id: 3, animalId: 4, personId: 5}
+        
         ]
     }
 

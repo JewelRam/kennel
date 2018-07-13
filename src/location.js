@@ -10,12 +10,13 @@ export default props => {
                     {props.location.name}
                 </h5>
                 <p className="card-text">{props.location.adress}</p>
-                {
-                    <Link to={`/locations/${props.location.id}`}
-                          className="card-link">
-                        Details
-                    </Link>
-                }
+                <Link className="card-link"
+                    to={{
+                        pathname: `/locations/${props.location.id}`,
+                        state: { location: props.location }
+                    }}>
+                    Details
+                </Link>
             </div>
         </div>
     )

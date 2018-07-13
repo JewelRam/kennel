@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import Employee from "./employee"
+import Database from "./ApiManager"
 export default class EmployeeList extends Component {
     state = {
-        employees: [
-            {id: 1, name: "Woman Person" },
-            {id: 2, name: "Man Person" },
-            {id: 3, name: "Other Person" },
-            {id: 4, name: "Some Guy" }
-        ]
+        employees: [ ]
+            
+    }
+    componentDidMount () {
+       Database.getAllEmployees()
+        .then(employees => this.setState({ employees: employees }))
     }
 
     render() {

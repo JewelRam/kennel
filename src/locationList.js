@@ -7,6 +7,24 @@ export default class LocationList extends Component {
         locations: []
 
     }
+    checkOutLocation = (locationId) => {
+        // Delete the specified animal from the API
+        fetch(`http://localhost:5002/locations/${locationId}`, {
+            method: "DELETE"
+        })
+            // When DELETE is finished, retrieve the new list of animals
+            .then(() => {
+                // Remember you HAVE TO return this fetch to the subsequenet `then()`
+                return fetch("http://localhost:5002/locations")
+            })
+            // Once the new array of animals is retrieved, set the state
+            .then(a => a.json())
+            .then(locationList => {
+                this.setState({
+                    locations: locationList
+                })
+            })
+    }
 
     componentDidMount() {
         Database.getAllLocations()
@@ -17,10 +35,13 @@ export default class LocationList extends Component {
         return (
             <React.Fragment>
                 {
-                    this.state.locations.map(location => {
-                        return <Location key={location.id} location={location} />
-                    })
-                }
+                this.state.locations.map(location =>
+                    <Location key={location.id}
+                            location={location}
+                            checkOutLocation={this.checkOutLocation}
+                    />
+                )
+            }
             </React.Fragment>
         )
     }

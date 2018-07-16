@@ -17,6 +17,7 @@ export default props => {
                     }}>
                     Details
                 </Link>
+                <a href="#" onClick={() => props.checkOutLocation(props.location.id)}>Delete</a>
             </div>
         </div>
     )

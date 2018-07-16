@@ -1,25 +1,25 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
+import PropTypes from "prop-types"
 
-export default props => {
-    let employee = {}
+ 
+const Employee = ({employee, children, checkOutEmployee}) => {
+//     let employee = {}
+//     // Check if the data is in `props.animal`
+//   if (hasOwnProperty("employee")) {
+//     employee = employee
 
-    // Check if the data is in `props.animal`
-    if (props.hasOwnProperty("employee")) {
-        employee = props.employee
+//     // If not, data will be in `props.location.state.animal`
+// } else {
+//     employee = location.state.employee
+// }
 
-        // If not, data will be in `props.location.state.animal`
-    } else {
-        employee = props.location.state.employee
-    }
-
-   
     return (
         <div className="card" style={{width: `18rem`}}>
             <div className="card-body">
                 <h5 className="card-title">
-                    {employee.name}
+                    {children}
                 </h5>
                 <p className="card-text">{employee.name}</p>
                 <Link className="card-link"
@@ -29,7 +29,12 @@ export default props => {
                     }}>
                     Details
                 </Link>
+                <a href="#" onClick={() => checkOutEmployee(employee.id)}>Delete</a>
+
             </div>
         </div>
     )
 }
+Employee.propTypes = {employee: PropTypes.object.isRequired}
+
+export default Employee

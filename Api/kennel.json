@@ -1,74 +1,55 @@
 {
-    "animals": [
-        {
-            "id": 1,
-            "name": "Scorpion",
-            "breed": "German Shepherd"
-        },
-        {
-            "id": 2,
-            "name": "Spider",
-            "breed": "Golden Doodle"
-        },
-        {
-            "id": 3,
-            "name": "Puppy",
-            "breed": "Jack Russel"
-        },
-        {
-            "id": 4,
-            "name": "Kitten",
-            "breed": "Calico"
-        },
-        {
-            "id": 5,
-            "name": "Unicorn",
-            "breed": "Horse"
-        },
-        {
-            "id": 6,
-            "name": "Bear",
-            "breed": "Black Bear"
-        }
-    ],
-    "employees": [
-        {
-            "id": 1,
-            "name": "Woman Person"
-        },
-        {
-            "id": 2,
-            "name": "Man Person"
-        },
-        {
-            "id": 3,
-            "name": "Other Person"
-        },
-        {
-            "id": 4,
-            "name": "Some Guy"
-        }
-    ],
-    "locations": [
-        {
-            "id": 1,
-            "name": "Nashville North",
-            "adress": "110 Something Dr."
-        },
-        {
-            "id": 2,
-            "name": "Nashville South",
-            "adress": "230 Park Dr."
-        },
-        {
-            "id": 3,
-            "name": "Nashville East",
-            "adress": "4002 Road Rd."
-        },
-        {
-            "id": 4,
-            "name": "Nashville West",
-            "adress": "235 Court Ct."
-        }
-    ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "Pete",
+      "breed": "Rhino"
+    },
+    {
+      "id": 2,
+      "name": "kitty",
+      "breed": "cat"
+    },
+    {
+      "id": 3,
+      "name": "Paul",
+      "breed": "CHicken"
+    },
+    {
+      "id": 4,
+      "name": "Sally",
+      "breed": "Chicken"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Woman Person"
+    },
+    {
+      "id": 2,
+      "name": "Man Person"
+    },
+    {
+      "id": 3,
+      "name": "Other Person"
+    }
+  ],
+  "locations": [
+    {
+      "id": 2,
+      "name": "Nashville South",
+      "adress": "230 Park Dr."
+    },
+    {
+      "id": 3,
+      "name": "Nashville East",
+      "adress": "4002 Road Rd."
+    },
+    {
+      "id": 4,
+      "name": "Nashville West",
+      "adress": "235 Court Ct."
+    }
+  ]
 }
